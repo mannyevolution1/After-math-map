@@ -55,6 +55,8 @@ export interface Translations {
     cuePlaceholder: string;
     cuePresetsLabel: string;
     cuePresets: string[];
+    exampleLabel: string;
+    exampleText: string;
     previewLabel: string;
     saveBtn: string;
     validationAction: string;
@@ -164,9 +166,9 @@ export const TRANSLATIONS: Record<Language, Translations> = {
     storageNote:
       'Saved automatically on this device. No account, login, or external sync required.',
     entry: {
-      question: 'What’s one thing you want help getting done this week?',
+      question: 'What’s one thing you want to finish this week?',
       subtitle:
-        'Pick one thing that matters right now. You’ll define what done looks like and choose a single first move.',
+        'Pick one thing that matters right now. You’ll define what finished looks like and choose a realistic first move.',
       roadmapTitle: 'Bring a step from my Roadmap',
       roadmapDesc:
         'Arriving from Day 7 or carrying over a step? Paste or type the step you want to finish.',
@@ -189,13 +191,13 @@ export const TRANSLATIONS: Record<Language, Translations> = {
         'Draft the opening section of my report',
       ],
       continueBtn: 'Continue',
-      validationEmpty: 'Write or paste one thing you want to get done first.',
+      validationEmpty: 'Write or paste one thing you want to finish first.',
     },
     finishLine: {
-      stepLabel: 'Step 1 of 2 · Define done',
+      stepLabel: 'Step 1 of 2 · Define finished',
       enteredFromRoadmap: 'From your Roadmap',
       enteredOwn: 'What you entered',
-      question: 'What would count as done this week?',
+      question: 'How will you know it’s done?',
       helper:
         'Name something concrete you can clearly recognize when it happens—not just "work on it."',
       exampleLabel: 'For example:',
@@ -205,20 +207,20 @@ export const TRANSLATIONS: Record<Language, Translations> = {
       inputPlaceholder: 'Write a finish line you can clearly recognize when it happens',
       suggestionsLabel: 'Helpful ways to frame this:',
       confirmBtn: 'Confirm finish line',
-      validationEmpty: 'Describe what would count as done before continuing.',
+      validationEmpty: 'Describe how you will know it is done before continuing.',
     },
     firstMove: {
       stepLabel: 'Step 2 of 2 · First move',
       finishLineAnchor: 'Finish line',
-      question: 'What’s the first thing you could do with the time you actually have?',
+      question: 'What’s the first thing you can do, and when will you do it?',
       helper:
         'Keep it small enough that you can start right away, and tie it to a specific time or everyday cue.',
-      actionLabel: 'One concrete action',
-      actionPlaceholder: 'e.g., Open Voice Memos and record my opening question',
+      actionLabel: 'One concrete step',
+      actionPlaceholder: 'e.g., Record the opening question',
       suggestionsLabel: 'Small starting moves you can adapt:',
-      cueLabel: 'When or after what everyday cue?',
+      cueLabel: 'When will you do it?',
       cuePlaceholder: 'e.g., After dinner, or Today at 4:30 PM',
-      cuePresetsLabel: 'Quick cues:',
+      cuePresetsLabel: 'Quick openings:',
       cuePresets: [
         'Right now (10 min)',
         'After lunch',
@@ -226,10 +228,12 @@ export const TRANSLATIONS: Record<Language, Translations> = {
         'Before checking messages tomorrow',
         'Tonight at 8:00 PM',
       ],
-      previewLabel: 'Your commitment',
+      exampleLabel: 'Example:',
+      exampleText: 'After dinner, I’ll record the opening question.',
+      previewLabel: 'Your plan',
       saveBtn: 'Show my action',
-      validationAction: 'Enter one concrete first action.',
-      validationCue: 'Add a time or everyday cue so you know when to start.',
+      validationAction: 'Enter one concrete first step.',
+      validationCue: 'Add when or after what everyday cue you will do it.',
     },
     action: {
       finishLineLabel: 'Finish line',
@@ -261,8 +265,8 @@ export const TRANSLATIONS: Record<Language, Translations> = {
     stuck: {
       finishLineLabel: 'Original finish line',
       currentActionLabel: 'Current step',
-      question: 'What’s getting in the way right now?',
-      subtitle: 'Pick the closest match. We’ll adjust the step—without changing your goal.',
+      question: 'What happened? What’s getting in the way?',
+      subtitle: 'Pick the closest match. We’ll adjust the step—without changing your finish line.',
       blockers: {
         'dont-know-start': {
           title: 'I don’t know where to start.',
@@ -270,7 +274,7 @@ export const TRANSLATIONS: Record<Language, Translations> = {
         },
         'too-big': {
           title: 'This feels too big.',
-          detail: 'Shrink the step into something you can attempt in 5–10 minutes.',
+          detail: 'Name a five-minute version you can attempt right away.',
         },
         'time-taken': {
           title: 'My time got taken up.',
@@ -388,7 +392,7 @@ export const TRANSLATIONS: Record<Language, Translations> = {
       stepLabel: 'Paso 1 de 2 · Definir la meta',
       enteredFromRoadmap: 'De tu Roadmap',
       enteredOwn: 'Lo que escribiste',
-      question: '¿Qué contaría como terminado esta semana?',
+      question: '¿Cómo sabrás que ya está terminado?',
       helper:
         'Nombra algo concreto que puedas reconocer cuando pase—no solo "trabajar en ello".',
       exampleLabel: 'Por ejemplo:',
@@ -399,18 +403,18 @@ export const TRANSLATIONS: Record<Language, Translations> = {
         'Escribe un resultado concreto que reconozcas claramente al terminarlo',
       suggestionsLabel: 'Formas útiles de definirlo:',
       confirmBtn: 'Confirmar meta de llegada',
-      validationEmpty: 'Describe qué contaría como terminado antes de seguir.',
+      validationEmpty: 'Describe cómo sabrás que está terminado antes de seguir.',
     },
     firstMove: {
       stepLabel: 'Paso 2 de 2 · Primer movimiento',
       finishLineAnchor: 'Meta de llegada',
-      question: '¿Qué es lo primero que podrías hacer con el tiempo que realmente tienes?',
+      question: '¿Qué es lo primero que puedes hacer y cuándo lo harás?',
       helper:
         'Hazlo lo bastante pequeño para empezar sin fricción y átalo a una hora o señal diaria.',
-      actionLabel: 'Una acción concreta',
-      actionPlaceholder: 'ej. Abrir Notas de Voz y grabar mi pregunta inicial',
+      actionLabel: 'Un primer paso concreto',
+      actionPlaceholder: 'ej. Grabar la pregunta inicial en Notas de Voz',
       suggestionsLabel: 'Primeros pasos pequeños que puedes adaptar:',
-      cueLabel: '¿Cuándo o después de qué hábito diario?',
+      cueLabel: '¿Cuándo lo harás?',
       cuePlaceholder: 'ej. Después de cenar, o Hoy a las 4:30 PM',
       cuePresetsLabel: 'Señales rápidas:',
       cuePresets: [
@@ -420,10 +424,12 @@ export const TRANSLATIONS: Record<Language, Translations> = {
         'Mañana antes de abrir mensajes',
         'Hoy a las 8:00 PM',
       ],
-      previewLabel: 'Tu compromiso',
+      exampleLabel: 'Ejemplo:',
+      exampleText: 'Después de cenar, voy a grabar la pregunta inicial.',
+      previewLabel: 'Tu plan',
       saveBtn: 'Ver mi acción',
-      validationAction: 'Escribe una primera acción concreta.',
-      validationCue: 'Agrega una hora o señal diaria para saber cuándo empezar.',
+      validationAction: 'Escribe un primer paso concreto.',
+      validationCue: 'Agrega cuándo o después de qué señal diaria lo harás.',
     },
     action: {
       finishLineLabel: 'Meta de llegada',
@@ -456,7 +462,7 @@ export const TRANSLATIONS: Record<Language, Translations> = {
     stuck: {
       finishLineLabel: 'Meta de llegada original',
       currentActionLabel: 'Paso actual',
-      question: '¿Qué te está frenando en este momento?',
+      question: '¿Qué pasó? ¿Qué te está frenando?',
       subtitle: 'Elige la opción más cercana. Ajustaremos el paso sin perder tu meta.',
       blockers: {
         'dont-know-start': {
@@ -465,7 +471,7 @@ export const TRANSLATIONS: Record<Language, Translations> = {
         },
         'too-big': {
           title: 'Esto se siente demasiado grande.',
-          detail: 'Reduce el paso a algo que puedas intentar en 5–10 minutos.',
+          detail: 'Elige una versión de cinco minutos que puedas intentar de inmediato.',
         },
         'time-taken': {
           title: 'Se me fue el tiempo.',

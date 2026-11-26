@@ -165,6 +165,13 @@ export function FirstMoveScreen({
           </div>
         </div>
 
+        <div className="rounded-xl border border-zinc-800/80 bg-[#0D0D10] px-4 py-3 text-sm text-zinc-400">
+          <span className="text-xs font-medium text-zinc-500 mr-2">
+            {t.firstMove.exampleLabel}
+          </span>
+          <span className="text-zinc-200">“{t.firstMove.exampleText}”</span>
+        </div>
+
         {(action.trim() || cue.trim()) && (
           <div className="rounded-xl border border-zinc-800 bg-[#0D0D10] p-4 space-y-1">
             <p className="text-xs font-medium text-zinc-500">

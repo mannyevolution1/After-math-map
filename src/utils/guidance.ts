@@ -319,16 +319,16 @@ export function getTooBigSuggestions(
 
   if (lang === 'es') {
     return [
-      `Poner un temporizador de 5 minutos y hacer solo la primera parte en borrador de: ${step}`,
-      `Dedicar 10 minutos a listar las 3 partes más pequeñas de "${goal}" y empezar solo la #1`,
-      `Hacer una versión mínima e imperfecta de "${step}" en menos de 10 minutos`,
+      `Versión de 5 minutos: hacer solo la primera pieza en borrador de "${step}"`,
+      `Dedicar 5 minutos a listar las 3 partes más pequeñas de "${goal}" y empezar solo la #1`,
+      `Hacer una versión mínima e imperfecta de "${step}" sin corregir nada`,
     ];
   }
 
   return [
-    `Set a 5-minute timer and do just the rough first piece of: ${step}`,
-    `Spend 10 minutes listing the 3 smallest parts of "${goal}" and do only part 1`,
-    `Make a messy 10-minute version of "${step}" with zero polishing`,
+    `5-minute version: do just the rough first piece of "${step}"`,
+    `Spend 5 minutes listing the 3 smallest parts of "${goal}" and start only part 1`,
+    `Make a messy 5-minute version of "${step}" with zero polishing`,
   ];
 }
 
