@@ -1,0 +1,6 @@
+{
+  "name": "Follow Through",
+  "description": "System 02 in the Human Systems Evolution Lab — finish one thing that matters this week and get practical help when you get stuck.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
