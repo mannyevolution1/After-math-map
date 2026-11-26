@@ -70,6 +70,12 @@ export interface Translations {
     completedRecordTitle: string;
     completedCountSingle: string;
     completedCountPlural: string;
+    progressLabel: string;
+    progressZero: string;
+    progressSingle: string;
+    progressPlural: string;
+    activeStepLabel: string;
+    finishDestinationLabel: string;
     deviceSavedStatus: string;
   };
   changeStep: {
@@ -235,6 +241,12 @@ export const TRANSLATIONS: Record<Language, Translations> = {
       completedRecordTitle: 'Completed so far',
       completedCountSingle: '1 step done',
       completedCountPlural: '{count} steps done',
+      progressLabel: 'Progress toward your finish line',
+      progressZero: '0 steps completed',
+      progressSingle: '1 step completed',
+      progressPlural: '{count} steps completed',
+      activeStepLabel: 'Step {number} active',
+      finishDestinationLabel: 'Finish line',
       deviceSavedStatus: 'Saved on this device—you can close this tab and come back anytime.',
     },
     changeStep: {
@@ -423,6 +435,12 @@ export const TRANSLATIONS: Record<Language, Translations> = {
       completedRecordTitle: 'Completado hasta ahora',
       completedCountSingle: '1 paso completado',
       completedCountPlural: '{count} pasos completados',
+      progressLabel: 'Avance hacia tu meta de llegada',
+      progressZero: '0 pasos completados',
+      progressSingle: '1 paso completado',
+      progressPlural: '{count} pasos completados',
+      activeStepLabel: 'Paso {number} en curso',
+      finishDestinationLabel: 'Meta',
       deviceSavedStatus:
         'Guardado en este dispositivo: puedes cerrar esta pestaña y volver cuando quieras.',
     },
